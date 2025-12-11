@@ -13,7 +13,7 @@ def compute_face_score(has_spike,engagement):
     if engagement <0.015:
         score +=40
     return min(score,100)
-
+    
 def run_fake_detection(path=r"C:\Users\admin\Downloads\Influencer_analytics\data\growth_data.csv"):
     df=pd.read_csv(path)
     df['engagement_rate']=(df['avg_likes']+df ['avg_comments'])/df['followers']
