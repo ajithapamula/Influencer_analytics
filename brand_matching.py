@@ -3,7 +3,6 @@ import pandas as pd
 from sentece_transformers import sentece_transformers
 from sklearn.metrics.pairwise import consine_similarity
 
-
 def run_brand_matching (influencer_df,
                         brands_path="data/brands_data.csv",
                         top_k=10):
